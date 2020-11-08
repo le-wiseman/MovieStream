@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}
+    Homepage
+{% endblock title %}
+{% block content %}
+    {% load static %}
+    <div class="container" style="margin-top: 40vh;">
+        <div class="row">
+            <div class="col-6 col-md-4">
+                <div class="card bg-transparent" style="width: 18rem;">
+                    <img class="card-img-top" src="{% static 'movieapp/images/movie1.png' %}" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title text-white" style="font-weight:bolder;">Boyz II Men</h5>
+                      <p class="card-text">
+                        <i class="fas fa-star" style="color:gold"></i>
+                        <i class="fas fa-star" style="color:gold"></i>
+                        <i class="fas fa-star" style="color:gold"></i>
+                        <i class="fas fa-star" style="color:gold"></i>
+                        <i class="fas fa-star" style="color:gold"></i>
+                      </p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
